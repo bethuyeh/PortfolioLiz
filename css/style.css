@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 1.2rem 0;
 }
 .btn{
-    background: var(--persian-red);
+    background: purple;
     border: none;
     color: #fff;
     text-transform: capitalize;
@@ -58,6 +58,14 @@ button a:visited{
 .container{
     width: 90vw;
     margin: 0 auto;
+}
+
+.container h2 span{
+    color: purple;
+    font-size: 30px;
+}
+.container h1 span{
+    color: var(--dark);
 }
 .section-py{
     padding: 5rem 0;
@@ -94,7 +102,7 @@ button a:visited{
     font-weight: 700;
 }
 .navbar-brand span{
-    color: var(--persian-red);
+    color: purple;
 }
 .navbar-toggler{
     border: none;
@@ -142,7 +150,7 @@ button a:visited{
 /* header */
 .header{
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(../images/livingRoom.jpg) center/cover fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(../images/port-hero.jpg) center/cover fixed;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -176,12 +184,43 @@ button a:visited{
 .title h2{
     opacity: 0.9;
     text-transform: capitalize;
+    color: purple;
     font-size: 1.7rem;
+}
+
+.img-div{
+    padding: 23px;
+    border-left: 5px solid purple;
+    border-bottom: 5px solid purple;
 }
 
 /* about */
 .about{
     overflow-x: hidden;
+}
+
+.about-overlay{
+    height: 130px;
+    background: rgba(128, 0, 128, 0.93);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: var(--transition);
+    overflow: hidden;
+}
+.about-overlay-content{
+    overflow: hidden;
+    transition: all 0.5s ease;
+    transform: translateY(100%);
+}
+.about-item:hover .about-overlay{
+    opacity: 1;
+}
+.about-item:hover .about-overlay-content{
+    transform: translateY(0);
 }
 
 /* chef */
@@ -198,6 +237,7 @@ button a:visited{
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    border: 1px solid purple;
 }
 .chef-item-img img{
     transition: var(--transition);
@@ -220,11 +260,14 @@ button a:visited{
     transition: transform 0.6s ease-in-out 0.3s;
 }
 .chef-overlay p{
-    font-weight: 700;
     font-size: 1.2rem;
     width: 70%;
     text-align: center;
-    line-height: 1.7;
+}
+
+.languages{
+    font-weight: 700;
+    
 }
 .chef-icons{
     display: flex;
@@ -277,12 +320,13 @@ button a:visited{
     cursor: pointer;
 }
 
-menuitem img{
-    height: 350px;
+.menu-item {
+    margin: 10px;
+    border: 1px solid purple;
 }
 .menu-overlay{
     height: 130px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(128, 0, 128, 0.93);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -327,6 +371,11 @@ menuitem img{
     text-align: center;
     color: #fff;
 }
+
+.title h2{
+    color: purple;
+}
+
 .testimonial-slider{
     margin: 2rem 0;
 }
@@ -334,6 +383,7 @@ menuitem img{
     width: 240px;
     height: 240px;
     border-radius: 50%;
+    border: 4px solid purple;
     margin: 0 auto;
 }
 .testimonial-item{
@@ -353,83 +403,101 @@ menuitem img{
 }
 
 /* contact */
-.contact-map{
-    margin-bottom: 1.8rem;
+#contact{
+    height:auto;
 }
+
+#contact h2{
+    margin-top: 35px;
+    text-align: center;
+    color: purple;
+    font-size: 34px;
+    line-height: 1.4rem;
+}
+
+.contact-section{
+    display: flex;
+    margin: 59px 18px auto 18px ;
+   
+}
+
 .contact-form{
-    margin: 1rem 0;
+    border: 5px solid purple;
+    width: 50%;
+    padding: 12px;
+    
 }
-.form-control{
+
+.contact-form form input, textarea{
     width: 100%;
     border: none;
     border-bottom: 1px solid var(--grey);
-    padding: 1rem 0.6rem;
+    padding: 2rem 1rem;
     font-size: 0.95rem;
-    opacity: 0.8;
-    margin: 0.3rem;
     outline: none;
 }
-.form-group{
-    display: flex;
-}
-.btn.contact-btn{
+
+.contact-form form button{
     width: 100%;
-    margin-top: 0.5rem;
-    font-weight: 600;
-    padding: 1rem 0;
+    text-align: center;
+    background-color: purple;
+    color: white;
+    outline: none;
+    border: none;
+    margin-top: 12px;
+    height: 50px;
+}
+
+.reach-me{
+    margin-left: 22px;
+    width: 50%;
+   
+}
+
+.reach-text{
+    box-shadow: 1px 1px 1px 1px #3636362f;
+    border: none;
+    outline: none;
+    margin: 0 14px 14px 14px;
+    padding: 35px;
+    text-align: center;
+    font-size: 22px;
+    color: purple
+}
+
+.reach-text a{
+    color: purple;
+}
+
+.bottom-page{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.bottom-page p{
+    padding-left: 2.5vw;
+    color: #363636;
 }
 
 /* footer */
-.footer{
-    border-top: 2px solid var(--lightGrey);
-}
-.footer-item{
-    margin-bottom: 3rem;
-}
-.footer-item h3{
-    opacity: 0.8;
-}
-.footer-item .para-text{
-    margin: 0;
-    font-size: 0.9rem;
-    opacity: 0.6;
-}
-.footer-item:nth-child(3){
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../images/footer-img.jpg) center/cover no-repeat;
-    color: #fff;
-    padding: 2rem;
-    border-radius: 1.3rem;
-}
-.footer-item:nth-child(3) .para-text{
-    color: #fff;
-    line-height: 0.5;
-}
-.footer-item:nth-child(3) p:not(.para-text){
-    font-weight: 500;
-}
-.footer-icons{
-    display: flex;
-}
-.footer-icons a{
-    color: var(--persian-red);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0.4rem 0.6rem 1rem;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: var(--transition);
-}
-.footer-icons a:first-child{
-    margin-left: 0;
-}
-.footer-icons a:hover{
-    background: var(--persian-red);
-    color: #fff;
-}
 
+@media screen and (max-width:565px){
+    #contact{
+        height: auto;
+    }
+    .contact-section{
+        display: block;
+    }
 
+    .contact-form{
+        width: 100%;
+    }
+
+    .reach-me{
+        width: 100%;
+        margin: 17px auto;
+    }
+}
 
 
 

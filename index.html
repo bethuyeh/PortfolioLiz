@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Design <em>D''intérieur</em></title>
+    <title>Elizabeth Uyeh Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel = "icon" href = "images/favicon.png" type = "image/png" sizes = "16x16">
+    <link rel = "icon" href = "images/FaviconEU-removebg-preview.png" type = "image/png" sizes = "16x16">
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- google fonts -->
     <link rel = "stylesheet" href = "css/fonts.css">
     <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/4b901f1c12.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- normalize css -->
     <link rel = "stylesheet" href = "css/normalize.css">
@@ -27,7 +28,7 @@
     <!-- navbar -->
     <nav class = "navbar">
       <div class = "nav-brand-toggler">
-        <a href = "index.html" class = "navbar-brand">Design <span>.</span> D'Interieur</a>
+        <a href = "index.html" class = "navbar-brand"><img src="images/EU-biggerdot-removebg-preview.png" height="50px" width="50px"></a>
         <button type = "button" class = "navbar-toggler" id = "navbar-toggler">
           <i class = "fas fa-bars"></i>
         </button>
@@ -42,10 +43,7 @@
             <a href = "#about" class = "nav-link">about</a>
           </li>
           <li class = "nav-item">
-            <a href = "#designers" class = "nav-link">designers</a>
-          </li>
-          <li class = "nav-item">
-            <a href = "#menu" class = "nav-link">gallery</a>
+            <a href = "#designers" class = "nav-link">services</a>
           </li>
           <li class = "nav-item">
             <a href = "#contact" class = "nav-link">contact</a>
@@ -55,11 +53,11 @@
         <div class = "nav-info">
           <span class = "call-info">
             <i class = "fas fa-phone"></i>
-            +23412345678
+            <a href="tel:+2348142912525">+2348142912525</a> 
           </span>
           <button type = "button" class = "btn btn-top">
             <a href="#contact">
-            Contact Us
+            Contact Me
             </a>
           </button>
         </div>
@@ -70,9 +68,9 @@
     <!-- header -->
     <header class = "header" id = "home">
       <div class = "container">
-        <h2>All you need to create your dream space</h2>
-        <h1 class = "header-title">Create A home that defines you</h1>
-        <button type = "button" class = "btn"> <a href="#designers">Meet our Designers</a> </button>
+        <h2>Hi, my name is <span> Elizabeth Uyeh</span></h2>
+        <h1 class = "header-title">I'm a <span>FRONTEND DEVELOPER, UI/UX DESIGNER and MENTOR</span> </h1>
+        <button type = "button" class = "btn"> <a href="/Resume (3).pdf" download="/Resume (3).pdf" target="_blank"> Download my CV</a> </button>
       </div>
     </header>
     <!-- end of header -->
@@ -82,19 +80,30 @@
       <div class = "about-left" data-aos = "fade-right">
         <!-- title -->
         <div class = "title">
-          <h4>ABOUT US</h4>
-          <h2>You give the Details, We make the Design</h2>
+          <h4>ABOUT ME</h4>
+          <h2>I am very passionate about writing clean and responsive code and I aim to bring my client' vision into reality!</h2>
         </div>
         <!-- end of title -->
         <p class = "para-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus corrupti beatae in deserunt dolor possimus optio commodi officia nostrum delectus obcaecati, modi eaque pariatur sint sit odit quos blanditiis?
+         With a background in engineering, I've been a frontend developer for the past three years. After graduating from the university, I decided to specialise in software development, thus starting my journey into frontend. I self taught for months after which I interned at a hub, learning HTML, CSS, JavaScript and React. I in turn taught these languages to interns whilst working remotely. I currently teach web development,work as a Frontend Developer at NIQ Solutions and work remotely for foreign companies. 
         </p>
-        <p class = "para-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione accusamus deserunt totam molestias, itaque nihil vel at doloribus dolor libero cupiditate nisi? Unde ducimus esse voluptates deleniti vel!</p>
+        <!-- <p class = "para-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione accusamus deserunt totam molestias, itaque nihil vel at doloribus dolor libero cupiditate nisi? Unde ducimus esse voluptates deleniti vel!</p> -->
       </div>
 
       <div class = "about-right" data-aos = "fade-left">
-        <img src = "images/interiorDesigner.jpg" alt = "chef image">
+        <div class="img-div">
+          <img src = "images/Me3.jpg" alt = "chef image">
+        </div>
+        <div class = "about-overlay">
+          <div class = "about-overlay-content">
+            <div>
+              <h2>A weather app</h2>
+            <h5>Weather API used in creating a website for searching the weather of any part of the world.</h5>
+          </div>
+        </div>
+        
       </div>
+
     </section>
     <!-- end of about -->
 
@@ -103,8 +112,7 @@
       <div class = "container">
         <!-- title -->
         <div class = "title">
-          <h4>meet our designers</h4>
-          <h2>Your personality, Our Expertise</h2>
+          <h2>Services I offer</h2>
         </div>
         <!-- end of title -->
 
@@ -112,9 +120,9 @@
           <!-- item -->
           <div class = "chef-item">
             <div class = "chef-item-img">
-              <img src = "./images/KitchenDesign.webp" alt = "decor image">
+              <img src="images/undraw_code_review_re_woeb.svg" alt="design-img" height="300px"></img>
               <div class = "chef-overlay">
-                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <p>I have been a frontend developer for  3 years, conversant in languages such as <p class="languages">HTML, CSS, Javascript, ReactJS, React Native Redux, GIT, Bootstrap, </p></p>
                 <div class = "chef-icons">
                   <span>
                     <i class = "fab fa-facebook fa-fw"></i>
@@ -126,8 +134,8 @@
               </div>
             </div>
             <div class = "chef-item-footer">
-              <h2>Miss A. Ngunan</h2>
-              <h3>owner & manager</h3>
+              <h2>Frontend Developer</h2>
+              
             </div>
           </div>
           <!-- end of item -->
@@ -135,9 +143,9 @@
           <!-- item -->
           <div class = "chef-item">
             <div class = "chef-item-img">
-              <img src = "images/InteriorDesigner3.webp" alt = "chef image">
+              <img src = "images/undraw_designer_girl_re_h54c.svg" alt = "frontend-image" height="300px">
               <div class = "chef-overlay">
-                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <p>I have been a Designer for  2 years conversant with<p class="languages">Figma, Invision, Adobe Photoshop, Adobe XD, Adobe Illustrator</p></p>
                 <div class = "chef-icons">
                   <span>
                     <i class = "fab fa-facebook fa-fw"></i>
@@ -149,17 +157,17 @@
               </div>
             </div>
             <div class = "chef-item-footer">
-              <h2>Mrs C. Chia</h2>
-              <h3>Design Specialist</h3>
+              <h2>UI/UX Designer</h2>
+              
             </div>
           </div>
           <!-- end of item -->
           <!-- item -->
           <div class = "chef-item">
             <div class = "chef-item-img">
-              <img src = "images/Female-interior-designer (1).jpg" alt = "chef image">
+              <img src = "images/undraw_teaching_re_g7e3.svg" alt = "teaching image" height="300px">
               <div class = "chef-overlay">
-                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <p>I have been an instructor for 2 years teaching web development and UI Design</p>
                 <div class = "chef-icons">
                   <span>
                     <i class = "fab fa-facebook fa-fw"></i>
@@ -171,8 +179,8 @@
               </div>
             </div>
             <div class = "chef-item-footer">
-              <h2>Miss M. Shidoon</h2>
-              <h3>food items specialist</h3>
+              <h2>Instructor</h2>
+              
             </div>
           </div>
           <!-- end of item -->
@@ -186,23 +194,23 @@
     <section id = "menu" class = "menu section-py">
       <!-- title -->
       <div class = "title">
-        <h4>inhabited sculpture where...</h4>
-        <h2>we shape our homes and then our homes shape us</h2>
+        <h4></h4>
+        <h2>Some of the projects I've worked on</h2>
       </div>
       <!-- end of title -->
 
       <div class = "menu-wrapper popup-gallery" data-aos = "fade-up">
         <!-- item -->
         <div class = "menu-item">
-          <a href = "images/pexels-daria-shevtsova-1030979.jpg">
-            <img src = "images/pexels-daria-shevtsova-1030979.jpg" height="750px" alt = "food image">
+          <a href = "https://loquacious-pie-54144c.netlify.app/" target="_blank">
+            <img src = "images/WA2.png" height="400px" alt = "food image">
             <div class = "menu-overlay">
               <div class = "menu-overlay-content">
                 <div>
-                  <h2>Outdoor Cafes</h2>
-                  <h2>N158,000</h2>
+                  <h2>A weather app</h2>
+            
                 </div>
-                <h5>Taste / Elegance / Style</h5>
+                <h5>Weather API used in creating a website for searching the weather of any part of the world.</h5>
               </div>
             </div>
           </a>
@@ -210,15 +218,15 @@
         <!-- end of item -->
         <!-- item -->
         <div class = "menu-item">
-          <a href = "images/KitchenTop.jpg">
-            <img src = "images/living area.jpg" alt = "food image">
+          <a href = "https://brave-brahmagupta-2140a2.netlify.app/" target="_blank">
+            <img src = "images/MAU-Writers.png" alt = "food image" height="400px">
             <div class = "menu-overlay">
               <div class = "menu-overlay-content">
                 <div>
-                  <h2>Cozy Living Room</h2>
-                  <h2>N200,000</h2>
+                  <h2>Writers Course</h2>
+          
                 </div>
-                <h5>Taste / Elegance / Style</h5>
+                <h5>A website where which sells courses to writers</h5>
               </div>
             </div>
           </a>
@@ -226,15 +234,15 @@
         <!-- end of item -->
         <!-- item -->
         <div class = "menu-item">
-          <a href = "images/Livin room2.jpg">
-            <img src = "images/KitchenArea.jpg" alt = "food image">
+          <a href = "http://niqsols.com/" target="_blank">
+            <img src = "images/NIQ SOLUTIONS ligo.jpg" alt = "food image" height="400px">
             <div class = "menu-overlay">
               <div class = "menu-overlay-content">
                 <div>
-                  <h2>French Kitchen</h2>
-                  <h2>N252,500</h2>
+                  <h2>NIQ Solutions</h2>
+                  
                 </div>
-                <h5>Taste / Elegance / Style</h5>
+                <h5>A company website for outsourcing</h5>
               </div>
             </div>
           </a>
@@ -242,15 +250,15 @@
         <!-- end of item -->
         <!-- item -->
         <div class = "menu-item">
-          <a href = "images/Kitchen.jpg">
-            <img src = "images/dining area.jpg" alt = "food image">
+          <a href = "https://sprightly-bonbon-129f81.netlify.app/" target="_blank">
+            <img src = "images/Crypto.png" alt = "food image" height="400px">
             <div class = "menu-overlay">
               <div class = "menu-overlay-content">
                 <div>
-                  <h2>Dining Parlour</h2>
-                  <h2>300,000</h2>
+                  <h2>Crypto App</h2>
+                  
                 </div>
-                <h5>Taste / Elegance / Style</h5>
+                <h5>Search for Cryptocurrencies</h5>
               </div>
             </div>
           </a>
@@ -258,15 +266,15 @@
         <!-- end of item -->
         <!-- item -->
         <div class = "menu-item">
-          <a href = "images/pexels-alex-qian-2343469.jpg">
-            <img src = "images/pexels-alex-qian-2343469.jpg" alt = "food image">
+          <a href = "https://singular-kangaroo-357af6.netlify.app/" target="_blank">
+            <img src = "images/IntDecor.png" alt = "food image" height="400px">
             <div class = "menu-overlay">
               <div class = "menu-overlay-content">
                 <div>
-                  <h2>Minimalist Living Room</h2>
-                  <h2>N250,000</h2>
+                  <h2>Interior Design Page</h2>
+                  
                 </div>
-                <h5>Taste / Elegance / Style</h5>
+                <h5>A fully responsive interior design web site with css animations</h5>
               </div>
             </div>
           </a>
@@ -274,15 +282,15 @@
         <!-- end of item -->
         <!-- item -->
         <div class = "menu-item">
-          <a href = "image/Kitchen.jpg">
-            <img src = "images/Kitchen.jpg" alt = "food image">
+          <a href = "https://sharp-nobel-4997a2.netlify.app/" target="_blank" >
+            <img src = "images/MedCare.png" alt = "food image" height="400px">
             <div class = "menu-overlay">
               <div class = "menu-overlay-content">
                 <div>
-                  <h2>Kitchen Dining</h2>
-                  <h2>N190,000</h2>
+                  <h2>Hospital Admin</h2>
+                  
                 </div>
-                <h5>Taste / Elegance / Style</h5>
+                <h5>A hospital administration site/dashboard</h5>
               </div>
             </div>
           </a>
@@ -296,30 +304,30 @@
     <section class = "testimonial section-py">
       <!-- title -->
       <div class = "title">
-        <h2>What People Say</h2>
+        <h2 style="color: #fff;">What People Say</h2>
       </div>
       <!-- end of title -->
 
       <div class = "testimonial-slider">
         <!-- item -->
         <div class = "testimonial-item">
-          <img src = "images/blackgirlPortrait.jpg" alt = "people image">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus architecto commodi voluptas, ut voluptates illo accusamus minus praesentium corrupti in odit facilis! Aut repudiandae soluta accusamus ullam perspiciatis quis dolorem.</p>
-          <h3>Karo Okafor</h3>
+          <img src = "images/Dee.jpeg" alt = "people image">
+          <p>A hard working, driven and intelligent developer with an incredible work ethic.</p>
+          <h3>Dooter Ior, UK</h3>
         </div>
         <!-- end of item -->
         <!-- item -->
         <div class = "testimonial-item">
-          <img src = "images/blackguyPortrait.jpg" alt = "people image">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus architecto commodi voluptas, ut voluptates illo accusamus minus praesentium corrupti in odit facilis! Aut repudiandae soluta accusamus ullam perspiciatis quis dolorem.</p>
-          <h3>Gabriel Akoh</h3>
+          <img src = "images/Dele's Jpeg.jpg" alt = "people image">
+          <p>She's a hard worker and a phenomenal creative, her response to challenges is worthy of admiration.</p>
+          <h3>Ayodele Ajongbade, NG</h3>
         </div>
         <!-- end of item -->
         <!-- item -->
         <div class = "testimonial-item">
-          <img src = "images/blackGirlportrait2C.jpg" alt = "people image">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus architecto commodi voluptas, ut voluptates illo accusamus minus praesentium corrupti in odit facilis! Aut repudiandae soluta accusamus ullam perspiciatis quis dolorem.</p>
-          <h3>Suur Timothy</h3>
+          <img src = "images/Mbiplang Jpeg.jpg" alt = "people image">
+          <p>I've witnessed Elizabeth show incredible skills as a Frontend Developer and Instructor, it's evident that she is passionate about what she does.</p>
+          <h3>Mbiplang Ardel</h3>
         </div>
         <!-- end of item -->
       </div>
@@ -327,78 +335,79 @@
     <!-- end of testimonial -->
 
     <!-- contact -->
-    <section id = "contact" class = "contact section-py">
-      <div class = "contact-wrapper container">
-        <div class = "contact-map">
-          <div class="mapouter"><div class="gmap_canvas"><iframe  width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="gmap_canvas" src="https://maps.google.com/maps?q=Gwarinpa,%20Abuja&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe></div>
+    <section id = "contact">
+      <h2>Contact me</h2>
+      <div class="contact-section">
+        <div class="contact-form">
+        <form
+        action="https://formsubmit.co/uyehelizabeth@gmail.com"
+        method="POST"
+         enctype="multipart/form-data"
+         name="emailsent"
+       
+        >
+          <div class="input-holder">
+            <input placeholder="First Name" type="text" name="name" required>
+          </div>
+          <div class="input-holder">
+            <input placeholder="Last Name" type="text" name="name" required>
+          </div>
+          <div class="input-holder">
+            <input type="email" name="email" placeholder="Email address" required>
+          </div>
+          <input type="hidden" name="_subject" value="Message from Portfolio!">
+          <input type="hidden" name="_autoresponse" value="Hi there! I've recieved your mail and would reply shortly">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5501/thankyou.html">
+          <input type="hidden" name="_captcha" value="false">
+
+          
+          <div class="input-holder">
+            <textarea type="text" name="name" placeholder="Type in your message" required></textarea>
+          </div>
+          <button type = "submit" value="submit" width="100%">
+                Send Message
+          </button>
+        </form>
+
+        <!-- <form action="https://formsubmit.co/your@email.com" method="POST">
+          <input type="text" name="name" required>
+          <input type="email" name="email" required>
+          <button type="submit">Send</button>
+     </form> -->
         </div>
+      
+
+      <div class="reach-me">
+        <div class="reach-text">
+          <a href="tel:+2348142912525" target="_blank">
+          <i class = "fas fa-phone"></i>
+          +2348142912525</a>
         </div>
 
-        <div class = "contact-info">
-          <!-- title -->
-          <div class = "title">
-            <h2>contact us</h2>
-          </div>
-          <!-- end of title -->
-          <form class = "contact-form" id="getintouch">
-            <div class = "form-group">
-              <input type = "text" class = "form-control" placeholder="Full name">
-              <input type = "email" class = "form-control" placeholder="Email address">
-            </div>
-            <input type = "text" class = "form-control" placeholder="Subject">
-            <textarea rows = "5" class = "form-control" placeholder="Tell about your project"></textarea>
-            <input type = "submit" class = "btn contact-btn" value = "Send Message">
-          </form>
+        <div class="reach-text">
+          <a href="https://www.linkedin.com/in/elizabeth-uyeh-607289193/" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            Linked-in
+            </a>
+          
+        </div>
+        <div class="reach-text">
+          <a href="https://github.com/bethuyeh" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            Git-hub
+        </a>
         </div>
       </div>
     </section>
+
+    <div class="bottom-page" style="background-color: rgba(3, 2, 3, 0.09); margin-bottom: 0;">
+      <p class="para-text">Copyright 2020 &copy; Design D'Interieur</p>
+      <p class="para-text">All rights reserved.</p>
+    </div>
+    
     <!-- end of contact -->
 
-    <!-- footer -->
-    <footer class = "footer section-py">
-      <div class = "footer-wrapper container">
-        <div class = "footer-item">
-          <h3>Find us</h3>
-          <p class = "para-text">Gwarinpa Estate, <br>Abuja, Nigeria</p>
-        </div>
-
-        <div class = "footer-item">
-          <h3>Place an Order</h3>
-          <p class = "para-text">+23412345678 | +23498765432</p>
-          <p class = "para-text">info@company.com</p>
-          
-        </div>
-
-        <div class = "footer-item">
-          <h3>Open Hours</h3>
-          <p class = "para-text">Sunday: Closed</p>
-          <p>Monday to Friday</p>
-          <p class = "para-text">9:00 AM - 5:00 PM</p>
-          <p>Saturday</p>
-          <p class = "para-text">10:00 AM - 6:00 PM</p>
-        </div>
-
-        <div class = "footer-item">
-          <div class = "footer-icons">
-            <a href = "https://www.facebook.com" target = "_blank">
-              <i class = "fab fa-facebook"></i>
-            </a>
-            <a href = "https://www.instagram.com" target = "_blank">
-              <i class = "fab fa-instagram"></i>
-            </a>
-            <a href = "https://www.twitter.com" target = "_blank">
-              <i class = "fab fa-twitter"></i>
-            </a>
-            <a href = "https://www.linkedin.com" target = "_blank">
-              <i class = "fab fa-linkedin"></i>
-            </a>
-          </div>
-          <p class = "para-text">Copyright 2020 &copy; Design D'Interieur</p>
-          <p class = "para-text">All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-    <!--- end of footer -->
+   
 
 
     <!-- jQuery -->
