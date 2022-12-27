@@ -401,8 +401,9 @@
     </section>
 
     <div class="bottom-page" style="background-color: rgba(3, 2, 3, 0.09); margin-bottom: 0;">
-      <p class="para-text">Copyright 2020 &copy; Design D'Interieur</p>
-      <p class="para-text">All rights reserved.</p>
+    <p class="para-text">Copyright <span id="copyright">
+        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+    </span> Elizabeth Uyeh<p class="para-text">All rights reserved.</p>
     </div>
     
     <!-- end of contact -->
